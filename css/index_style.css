@@ -104,7 +104,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #00ccff;
+  background: #cf8906;
   clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
@@ -200,6 +200,7 @@ p {
 
 .card-container {
 	background-color: #c7a719;
+  top: -60%;
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: #d3d4d6;
@@ -209,7 +210,7 @@ p {
 	max-width: 100%;
 	text-align: center;
   margin: auto;
-  opacity: 0;
+  transition: 20s;
 }
 
 .card-container .pro {
