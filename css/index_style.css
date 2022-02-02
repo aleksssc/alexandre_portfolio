@@ -22,11 +22,11 @@ body {
 .navMenu a {
   color: #f6f4e6;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
-  margin : 5px;
+  margin : 10px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -54,26 +54,26 @@ body {
 }
 
 .navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(38px);
-  transform: translateX(38px);
+  -webkit-transform: translateX(55px);
+  transform: translateX(55px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(138px);
+  -webkit-transform: translateX(180px);
   background:#e67e22;
-  transform: translateX(138px);
+  transform: translateX(180px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(250px);
+  -webkit-transform: translateX(350px);
   background:#c7a719;
-  transform: translateX(250px);
+  transform: translateX(350px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
@@ -106,7 +106,7 @@ body {
   height: 100%;
   background: #cf8906;
   clip-path: circle(150px at 80% 20%);
-  transition: 0.5s ease-in-out;
+  transition: 0.5s;
 }
 
 .container .card:hover:before{
@@ -154,7 +154,7 @@ body {
   width: 100%;
   height: 100px;
   text-align: center;
-  transition: 1s;
+  transition: 0.5s;
   z-index: 10;
 }
 
@@ -285,3 +285,5 @@ button.primary.ghost {
 	margin: 0 7px 7px 0;
 	padding: 7px;
 }
+
+/* back btt */
