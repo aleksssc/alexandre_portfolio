@@ -17,7 +17,7 @@
     <!-- home div -->
     <div id="home_m" style="display: none;height: 100vh;width: 100vw;" class="home_menu">
 
-        <div class="container_home">
+        <div id="home_container" class="container_home">
             <div class="card_home">
                 <div class="face face1">
                     <div class="content">
@@ -46,7 +46,7 @@
                     <div class="content">
                         <p>I have as training, a professional programming course equivalent to the 12th year, I have a
                             taste for several programming languages, namely web development.</p>
-                        <a href="#">Read More</a>
+                        <a href="#">View More</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                 <div class="face face2">
                     <div class="content">
                         <p>After this introduction you are more than invited to visit my projects!</p>
-                        <a href="#">Read More</a>
+                        <a id="view_projects" href="#">View Projects</a>
                     </div>
                 </div>
             </div>
@@ -148,6 +148,8 @@
     const project_btt = document.getElementById("project_btt");
     const about_btt = document.getElementById("about_btt");
 
+    const view_projects = document.getElementById("view_projects");
+
     const menu = document.getElementById("nav");
 
     //calls home div
@@ -194,4 +196,22 @@
         const about_container = document.getElementById("about_container");
         about_container.style.top = "25%";
     });
+
+    //gives function to home, view projects
+    view_projects.addEventListener('click', function () {
+        const home_container = document.getElementById("home_m");
+        home_container.style.display = "none";
+        home_container.style.transition = "0.5s";
+
+        document.body.style.background = "#e67e22";
+        document.body.style.transition = "0.5s";
+
+        const project_m = document.getElementById("project_m");
+        const project_container = document.getElementById("project_container");
+
+        project_m.style.display = "flex";
+        project_container.style.transition = "1.0s";
+        project_container.style.opacity = "1";
+    });
+
 </script>
