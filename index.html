@@ -13,25 +13,97 @@
         <div class="dot"></div>
     </nav>
 
-    <div id="project_m" style="display: none;height: 100vh;width: 100vw;" class="project_menu">
-        <div id="project_container" class="container">
-            <div class="card">
-                <div class="imgBx">
-                    <img src="img/bankchange_logo.png">
+    <div id="home_m" style="display: none;height: 100vh;width: 100vw;" class="home_menu">
+
+        <div class="container_home">
+            <div class="card_home">
+                <div class="face face1">
+                    <div class="content">
+                        <img
+                            src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                        <h3>Design</h3>
+                    </div>
                 </div>
-                <div class="contentBx">
-                    <h1 style="color:white;padding: 10px;">Bank Change</h1>
-                    <a href="#" style="cursor: not-allowed;" disabled>Unavailable</a>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Regarding design, I have already done some professional work, however most of it was for
+                            self-study.</p>
+                        <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="img/logotipo_menu.ico">
+            <div class="card_home">
+                <div class="face face1">
+                    <div class="content">
+                        <img
+                            src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                        <h3>Code</h3>
+                    </div>
                 </div>
-                <div class="contentBx">
-                    <h1 style="color:white;padding: 10px;">Fazendas Car</h1>
-                    <a href="#" style="cursor: not-allowed;" disabled>Unavailable</a>
+                <div class="face face2">
+                    <div class="content">
+                        <p>I have as training, a professional programming course equivalent to the 12th year, I have a
+                            taste for several programming languages, namely web development.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_home">
+                <div class="face face1">
+                    <div class="content">
+                        <img
+                            src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                        <h3>Launch</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>After this introduction you are more than invited to visit my projects!</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="project_m" style="display: none;height: 100vh;width: 100vw;" class="project_menu">
+        <div id="project_container" class="container_project">
+            <div class="card_project">
+                <div class="face face1">
+                    <div class="content">
+                        <img style="  display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;" src="img/bankchange_logo.png">
+                        <h3>BankChange</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>This is a personal project, with the objective of skill training. It consists of a
+                            cryptocurrencies market simulator, in which users can buy and sell their crypto coins among
+                            themselves with real values updated every 30 minutes through an Application Programming
+                            Interface (API).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card_project">
+                <div class="face face1">
+                    <div class="content">
+                        <img style="  display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;" src="img/reloading icon.png">
+                        <h3>ReManage</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Reloading, where I had the opportunity to apply and improve knowledge acquired during the
+                            course. The project consisted of 600 hours with a team of 4 elements, whose objective was to
+                            develop an application in VBA/mySQL to organize candidates and job offers from company.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,6 +151,10 @@
 
         document.body.style.background = "#922a2a";
         document.body.style.transition = "0.5s";
+
+        const home_m = document.getElementById("home_m");
+
+        home_m.style.display = "flex";
     });
 
     project_btt.addEventListener('click', function () {
