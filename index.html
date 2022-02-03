@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Alex Portfolio</title>
+    <title>Alexandre Cardinha Portfolio</title>
     <link rel="stylesheet" href="css/index_style.css">
 </head>
 
 <body>
+    <!-- first page div -->
     <nav id="nav" class="navMenu">
         <a id="home_btt" href="#">Home</a>
         <a id="project_btt" href="#">Projects</a>
@@ -13,6 +14,7 @@
         <div class="dot"></div>
     </nav>
 
+    <!-- home div -->
     <div id="home_m" style="display: none;height: 100vh;width: 100vw;" class="home_menu">
 
         <div class="container_home">
@@ -28,7 +30,7 @@
                     <div class="content">
                         <p>Regarding design, I have already done some professional work, however most of it was for
                             self-study.</p>
-                        <a href="#">Read More</a>
+                        <a id="viewmore_design" href="#">View More</a>
                     </div>
                 </div>
             </div>
@@ -67,6 +69,7 @@
 
     </div>
 
+    <!-- project div -->
     <div id="project_m" style="display: none;height: 100vh;width: 100vw;" class="project_menu">
         <div id="project_container" class="container_project">
             <div class="card_project">
@@ -110,6 +113,7 @@
     </div>
     </div>
 
+    <!-- about div -->
     <div id="about_m" style="display: none;height: 100vh;width: 100vw;" class="about_menu">
         <div id="about_container" class="card-container">
             <span class="pro">JÚNIOR</span>
@@ -139,12 +143,14 @@
 
 </html>
 <script>
+    //gets buttons by id
     const home_btt = document.getElementById("home_btt");
     const project_btt = document.getElementById("project_btt");
     const about_btt = document.getElementById("about_btt");
 
     const menu = document.getElementById("nav");
 
+    //calls home div
     home_btt.addEventListener('click', function () {
         menu.style.top = "-10%";
         menu.style.transition = "0.5s";
@@ -157,6 +163,7 @@
         home_m.style.display = "flex";
     });
 
+    //calls project div
     project_btt.addEventListener('click', function () {
         menu.style.top = "-10%";
         menu.style.transition = "0.5s";
@@ -173,6 +180,7 @@
 
     });
 
+    //calls about div
     about_btt.addEventListener('click', function () {
         menu.style.top = "-10%";
         menu.style.transition = "0.5s";
