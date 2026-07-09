@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+<body class="p-3 bg-dark text-white">
+    
+<div class="fixed-top w-100 px-3 py-2 border-secondary menu">
+  <div class="d-flex align-items-center">
+
+    <!-- LEFT MENU -->
+    <ul class="nav me-auto">
+      <li><a href="#start" class="nav-link px-3 text-white">Start</a></li>
+      <li><a href="#projects" class="nav-link px-3 text-white">Projects</a></li>
+      <li><a href="#about" class="nav-link px-3 text-white">About</a></li>
+      <li><a href="#links" class="nav-link px-3 text-white">Links</a></li>
+    </ul>
+
+    <!-- SEARCH FIXA À DIREITA -->
+    <div style="width:250px;">
+      <input id="search" type="search" class="form-control" placeholder="Finder">
+    </div>
+
+  </div>
+</div>
+
+<div id="start" class="d-flex flex-column justify-content-center align-items-center min-vh-100 py-5 text-center text-white bg-dark">
+    <h1><b>Welcome</b></h1>
+    <p class="item">
+        This is <b>Alexandre Cardinha's</b> portfolio, here you can check all my professional information and also some personal projects.
+    </p>
+</div>
+
+<div id="projects" class="min-vh-100 py-5 d-flex align-items-center justify-content-center">
+
+    <div class="container align">
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+<div class="col-md-4">
+  <div class="project-card-modern">
+
+    <img src="assets/images/images.jpg">
+
+    <div class="overlay">
+      <h5>FazendasCar</h5>
+      <p>Car management system</p>
+      <a href="#" class="btn btn-light btn-sm">GitHub</a>
+    </div>
+
+  </div>
+</div>
+            <!-- CARD 2 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white border-secondary h-100 project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bank Change - Cryptocurrency Web App</h5>
+                        <p class="card-text">
+                            Bank Change is a web application that enables peer-to-peer buying and selling of cryptocurrencies between users, acting as a simple and efficient exchange platform.
+                            <br><br>It includes core features such as user management, order creation, and transaction history, all wrapped in a clean and intuitive interface designed for ease of use.
+                        </p>
+                        <a href="https://github.com/aleksssc/bankchange/" class="btn btn-outline-light btn-sm">GitHub Link</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="about" class="min-vh-100 py-5 d-flex align-items-center justify-content-center">
+    <h1>About</h1>
+</div>
+
+<div id="links" class="min-vh-100 py-5 d-flex align-items-center justify-content-center">
+    <div class="container text-center col-md-6 mx-auto my-5">
+
+			<!-- Avatar -->
+			<img class="img-fluid rounded-circle mb-3" src="assets/images/avatar.png" width="150" alt="Avatar">
+
+			<!-- Display Name -->
+			<h1>Links</h1>
+
+			<!-- Bio -->
+			<p>Your bio here.</p>
+
+			<!-- Links -->
+			<div class="mb-5">
+				<p><a class="btn btn-primary w-100" href="https://github.com/aleksssc">GItHub</a></p>
+				<p><a class="btn btn-primary w-100" href="https://github.com/aleksssc">LinkedIn</a></p>
+			</div>
+		</div>
+</div>
+
+</body>
+
+<script>
+const searchInput = document.getElementById("search");
+const targets = document.querySelectorAll("p, h5, h1, h2, h3, a");
+
+searchInput.addEventListener("input", function () {
+    const value = this.value.trim().toLowerCase();
+
+    targets.forEach(el => {
+        if (!el.dataset.original) {
+            el.dataset.original = el.textContent;
+        }
+
+        const original = el.dataset.original;
+
+        if (!value) {
+            el.innerHTML = original;
+            el.style.display = "";
+            return;
+        }
+
+        if (original.toLowerCase().includes(value)) {
+            const regex = new RegExp(value, "gi");
+            el.innerHTML = original.replace(regex, `<span class="highlight">$&</span>`);
+            el.style.display = "";
+        } else {
+            el.style.display = "none";
+        }
+    });
+});
+</script>
+</html>

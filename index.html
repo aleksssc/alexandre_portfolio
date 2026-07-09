@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+       
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="menu px-3 py-2 d-flex align-items-center">
+    <ul class="nav me-auto">
+        <li><a href="#start" class="nav-link text-white px-3">Start</a></li>
+        <li><a href="#projects" class="nav-link text-white px-3">Projects</a></li>
+        <li><a href="#experience" class="nav-link text-white px-3">Work Experience</a></li>
+        <li><a href="#links" class="nav-link text-white px-3">Links</a></li>
+    </ul>
+</div>
+
+<!-- START -->
+<section id="start" class="text-center d-flex flex-column justify-content-center align-items-center" style="min-height:100vh;">
+    <h1 class="display-3 fw-bold">
+        <span id="typing"></span>
+    </h1>
+    <p class="text-secondary">Developer • SysAdmin</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+
+        <h2 class="mb-5 text-center">Projects</h2>
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-4">
+                <div class="project-card">
+
+                    <img src="\assets\images\fcar_project.png" alt="project">
+
+                    <div class="card-body p-3">
+                        <h5>Cardinha Car</h5>
+                        <p class="text-secondary">
+                            Management system for car farms automation.
+                        </p>
+                        <a href="https://github.com/aleksssc/fcar" class="btn btn-outline-light btn-sm">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4">
+                <div class="project-card">
+
+                    <img src="\assets\images\binance_wall.png" alt="project">
+
+                    <div class="card-body p-3">
+                        <h5>Bank Change</h5>
+                        <p class="text-secondary">
+                            Crypto trading platform between users.
+                        </p>
+                        <a href="https://github.com/aleksssc/bankchange" class="btn btn-outline-light btn-sm">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4">
+                <div class="project-card">
+
+                    <img src="\assets\images\python_project.png" alt="project">
+
+                    <div class="card-body p-3">
+                        <h5>Automation Script</h5>
+                        <p class="text-secondary">
+                            Python-based automation script.
+                        </p>
+                        <a href="https://github.com/aleksssc/print_by_mail" class="btn btn-outline-light btn-sm">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Work Experience -->
+<section id="experience">
+  <div class="container">
+
+    <h2>Work Experience</h2>
+
+    <div class="experience-item">
+    <h4>Overwan, LDA</h4>
+        <div class="experience-role">• Network Operations Technician</div>
+        <div class="experience-date"> Jan 2026 – Present</div>
+
+        <div class="experience-role">• IT Consultant</div>
+        <div class="experience-date"> Mar 2024 – Jan 2026</div>
+
+        <ul>
+            <li>Developed automation tools using Python and PowerShell to streamline operational tasks</li>
+            <li>Provided technical support and troubleshooting for client IT environments</li>
+            <li>Contributed to improving efficiency through process automation and system administration</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h4>Reloading</h4>
+      <div class="experience-role">Visual Basic For Applications Developer</div>
+      <div class="experience-date">Mar 2021 – Sep 2021</div>
+
+      <ul>
+        <li>Built automation tools using VBA</li>
+        <li>Developed backend-style systems for workflow optimization</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- LINKS -->
+<section id="links" class="text-center py-5">
+  <div class="container">
+    <h2 class="mb-4">Links</h2>
+    <div class="link-strip">
+
+      <a class="glass-link" href="https://github.com/aleksssc" target="_blank">GitHub</a>
+      <a class="glass-link" href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a class="glass-link" href="mailto:alexcardinha14@gmail.com">Email</a>
+      <a class="glass-link" href="assets\files\alexandre_cardinha_CV_2026_04.pdf" target="_blank">CV</a>
+
+    </div>
+  </div>
+</section>
+
+</body>
+<script>
+    const text = "Alexandre's Portfólio";
+    let index = 0;
+
+    function typeEffect() {
+        const target = document.getElementById("typing");
+
+        if (index < text.length) {
+            target.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 150);
+        }
+    }
+
+    window.addEventListener("load", typeEffect);
+</script>
+</html>
