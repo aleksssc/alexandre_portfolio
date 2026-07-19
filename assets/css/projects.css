@@ -42,22 +42,25 @@
 
 }
 
+/* Estado padrão: todos os cards ficam desvanecidos */
 .projectSwiper .swiper-slide{
 
-    transition:
-        transform .4s ease,
-        opacity .4s ease;
+    opacity:.80 !important;
+
+    filter:brightness(.65) saturate(.4);
 
 }
 
-.projectSwiper .swiper-slide-active{
+/* Apenas o card centrado fica totalmente visível */
+.projectSwiper .swiper-slide.swiper-slide-active{
 
-    transform:scale(1.05);
+    opacity:1 !important;
 
-    opacity:1;
+    filter:brightness(1) saturate(1);
+
+    transition: 0.35s;
 
 }
-
 
 /* ======================================================
    CARD
@@ -584,15 +587,17 @@
 
     .projectSwiper .swiper-slide{
 
-        height:auto;
+        opacity:.30 !important;
 
-        opacity:.45;
+        filter:brightness(.5) saturate(.45);
 
     }
 
-    .projectSwiper .swiper-slide-active{
+    .projectSwiper .swiper-slide.swiper-slide-active{
 
-        opacity:1;
+        opacity:1 !important;
+
+        filter:brightness(1) saturate(1);
 
     }
 
