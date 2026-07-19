@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             depth: window.innerWidth < 768 ? 0 : 250,
 
-            scale: window.innerWidth < 768 ? 1 : 0.82,
+            scale: window.innerWidth < 768 ? 0.85 : 0.82,
 
             slideShadows: false
 
