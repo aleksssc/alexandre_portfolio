@@ -336,23 +336,78 @@ section{
         border:0;
         padding:8px 0;
         box-shadow:none !important;
+
+        transition:transform .2s ease;
     }
 
     .navbar-toggler:focus{
         box-shadow:none !important;
     }
 
-    .navbar-toggler-icon{
-        filter:invert(1);
+    .navbar-toggler:active{
+        transform:scale(.92);
     }
 
-    /*
-       Aplica o mesmo aspeto durante a animação
-       e depois de o menu ficar aberto
-    */
+    /* Ícone hambúrguer personalizado */
+    .navbar-toggler-icon{
+        width:30px;
+        height:24px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start; /* em vez de flex-end */
+
+        gap:6px;
+
+        background-image:none !important;
+        filter:none;
+    }
+
+    .navbar-toggler-icon span{
+        display:block;
+
+        height:3px;
+
+        background:#fff;
+        border-radius:20px;
+
+        transform-origin:center;
+
+        transition:
+            transform .35s cubic-bezier(.4,0,.2,1),
+            opacity .25s ease,
+            width .3s ease;
+    }
+
+    .navbar-toggler-icon span:nth-child(1){
+        width:27px;
+    }
+
+    .navbar-toggler-icon span:nth-child(2){
+        width:20px;
+    }
+
+    .navbar-toggler-icon span:nth-child(3){
+        width:27px;
+    }
+
+    /* Só quando o menu está aberto */
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(1){
+        transform:translateY(9px) rotate(45deg);
+    }
+
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(2){
+        opacity:0;
+        transform:scaleX(0);
+    }
+
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(3){
+        transform:translateY(-9px) rotate(-45deg);
+    }
+
     .menu .navbar-collapse.collapsing,
     .menu .navbar-collapse.show{
-
         flex-basis:100%;
         width:100%;
 
@@ -370,30 +425,25 @@ section{
 
     /* Remove estilos da caixa quando está fechado */
     .menu .navbar-collapse:not(.show):not(.collapsing){
-
         padding:0;
         margin:0;
 
         background:transparent;
         border:0;
-
     }
 
     /* Lista dos links */
     .menu .navbar-nav{
-
         width:100%;
 
         gap:0;
 
         padding:0;
         margin:0;
-
     }
 
     /* Links mobile */
     .menu .nav-link{
-
         display:inline-block;
 
         padding:13px 0 !important;
@@ -403,35 +453,27 @@ section{
         font-weight:600;
 
         color:#bfc6d4 !important;
-
     }
 
     .menu .nav-link:hover,
     .menu .nav-link.active{
-
         color:#fff !important;
-
     }
 
     /* Linha pequena debaixo do item ativo */
     .menu .nav-link::after{
-
         left:0;
         bottom:6px;
 
         width:0;
 
         transform:none;
-
     }
 
     .menu .nav-link:hover::after,
     .menu .nav-link.active::after{
-
         width:35px;
-
     }
-
 }
 
 /* ======================================================
