@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         breakpoints: {
 
             0: {
-                slidesPerView: 1.1
+                slidesPerView: 1.2
             },
 
             576: {
@@ -40,16 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         watchSlidesProgress: true,
 
+        coverflowEffect: {
 
-        coverflowEffect:{
+            rotate: window.innerWidth < 768 ? 0 : 18,
 
-        rotate: window.innerWidth < 768 ? 0 : 18,
+            depth: window.innerWidth < 768 ? 0 : 250,
 
-        depth: window.innerWidth < 768 ? 0 : 250,
+            scale: window.innerWidth < 768 ? 1 : 0.82,
 
-        scale: window.innerWidth < 768 ? 1 : 0.82,
-
-        slideShadows:false
+            slideShadows: false
 
         },
 

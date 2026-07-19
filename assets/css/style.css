@@ -35,6 +35,22 @@ section{
 
 }
 
+.section-title{
+
+    color:#fff;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    text-align:center;
+
+    letter-spacing:-0.5px;
+
+}
+
 /* ======================================================
    HERO
 ====================================================== */
@@ -118,7 +134,7 @@ section{
 
     max-width:520px;
 
-    color:#b3b3b3;
+    color:#b4b8c5;
 
     font-size:1.35rem;
     line-height:1.8;
@@ -234,10 +250,19 @@ section{
 
     z-index:9999;
 
-    background:rgba(8,12,22,.70);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,12,22,.92) 0%,
+            rgba(18,25,45,.88) 40%,
+            rgba(23, 27, 54, 0.86) 50%,
+            rgba(18,25,45,.88) 60%,
+            rgba(8,12,22,.92) 100%
+        );
 
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(108,99,255,.10);
 
     transition:.35s;
 
@@ -445,16 +470,6 @@ section{
 
 }
 
-#experience h2{
-
-    text-align:center;
-
-    margin-bottom:60px;
-
-    font-weight:700;
-
-}
-
 .experience-item{
 
     max-width:900px;
@@ -473,14 +488,21 @@ section{
 
 }
 
+#experience .section-title{
+
+    margin-bottom:60px;
+
+}
+
 .experience-item:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-10px);
 
-    border-color:#5f6cff;
+    border-color:#6b5cff;
 
     box-shadow:
-        0 20px 50px rgba(0,0,0,.35);
+        0 0 30px rgba(108,92,255,.25),
+        0 30px 80px rgba(0,0,0,.6);
 
 }
 
@@ -488,7 +510,7 @@ section{
 
     margin-top:8px;
 
-    color:#5f6cff;
+    color:#3f7bff;
 
     font-weight:600;
 
