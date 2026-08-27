@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Website CatteCoelho",
+        "description": "Author official website.",
+        "image": "assets/images/CATTE.png",
+        "tags": [
+            "JS",
+            "HTML5",
+            "OAUTH"
+        ],
+        "github": "https://cattecoelho.com"
+    },
+    {
+        "name": "Azie Monitor",
+        "description": "Desktop platform for server and network monitoring.",
+        "image": "assets/images/aziemonitor.png",
+        "tags": [
+            "JS",
+            "HTML5",
+            "CSS"
+        ],
+        "github": "https://github.com/aleksssc/azie_monitor"
+    },
+    {
+        "name": "Automation Script",
+        "description": "Automatic email attachment printing.",
+        "image": "assets/images/python_project.png",
+        "tags": [
+            "Python",
+            "Microsoft 365",
+            "Email Automation"
+        ],
+        "github": "https://github.com/aleksssc/print_by_mail"
+    },
+    {
+        "name": "Bank Change",
+        "description": "Crypto trading platform between users.",
+        "image": "assets/images/bankchange.png",
+        "tags": [
+            "PHP",
+            "JavaScript",
+            "API"
+        ],
+        "github": "https://github.com/aleksssc/bankchange"
+    },
+    {
+        "name": "Cardinha Car",
+        "description": "Management system for car shops automation.",
+        "image": "assets/images/fcar_project.png",
+        "tags": [
+            "PHP",
+            "JavaScript",
+            "MySQL"
+        ],
+        "github": "https://github.com/aleksssc/fcar"
+    }
+]
