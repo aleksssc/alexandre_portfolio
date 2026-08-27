@@ -2,7 +2,9 @@
     {
         "name": "Website CatteCoelho",
         "description": "Author official website.",
-        "image": "assets/images/catte.png",
+        "image": "assets/images/CATTE.png",
+        "category": "web",
+        "featured": true,
         "tags": [
             "JS",
             "HTML5",
@@ -14,6 +16,8 @@
         "name": "Azie Monitor",
         "description": "Desktop platform for server and network monitoring.",
         "image": "assets/images/aziemonitor.png",
+        "category": "desktop",
+        "featured": true,
         "tags": [
             "JS",
             "HTML5",
@@ -25,6 +29,8 @@
         "name": "Automation Script",
         "description": "Automatic email attachment printing.",
         "image": "assets/images/python_project.png",
+        "category": "automation",
+        "featured": true,
         "tags": [
             "Python",
             "Microsoft 365",
@@ -36,6 +42,8 @@
         "name": "Bank Change",
         "description": "Crypto trading platform between users.",
         "image": "assets/images/bankchange.png",
+        "category": "web",
+        "featured": false,
         "tags": [
             "PHP",
             "JavaScript",
@@ -47,6 +55,8 @@
         "name": "Cardinha Car",
         "description": "Management system for car shops automation.",
         "image": "assets/images/fcar_project.png",
+        "category": "web",
+        "featured": false,
         "tags": [
             "PHP",
             "JavaScript",

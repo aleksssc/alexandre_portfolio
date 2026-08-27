@@ -144,18 +144,31 @@
 
     <div class="container">
 
-        <h2 class="section-title">
-            Applications I've built
-        </h2>
+        <!-- ============================= -->
+        <!-- FEATURED PROJECTS -->
+        <!-- ============================= -->
 
-        <p class="project-text">
-            Explore a selection of software and web.
-        </p>
+        <div class="projects-heading">
+
+            <span class="section-label">
+                Portfolio
+            </span>
+
+            <h2 class="section-title">
+                Featured Projects
+            </h2>
+
+            <p class="project-text">
+                A selection of projects I've designed and developed.
+            </p>
+
+        </div>
+
 
         <div class="swiper projectSwiper">
 
-            <div class="swiper-wrapper" id="projects-wrapper">
-                <!-- Projects loaded from JSON -->
+            <div class="swiper-wrapper">
+                <!-- Featured projects loaded from JSON -->
             </div>
 
             <div class="swiper-pagination"></div>
@@ -163,6 +176,76 @@
             <div class="swiper-button-next"></div>
 
             <div class="swiper-button-prev"></div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- ALL PROJECTS -->
+        <!-- ============================= -->
+
+        <div class="all-projects">
+
+            <div class="all-projects-heading">
+
+                <span class="section-label">
+                    More Work
+                </span>
+
+                <h2 class="section-title">
+                    Explore all projects
+                </h2>
+
+                <p class="project-text">
+                    Browse my work by category.
+                </p>
+
+            </div>
+
+
+            <!-- Filters -->
+
+            <div class="project-filters">
+
+                <button
+                    class="project-filter active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="project-filter"
+                    data-filter="web"
+                >
+                    Web
+                </button>
+
+                <button
+                    class="project-filter"
+                    data-filter="desktop"
+                >
+                    Desktop
+                </button>
+
+                <button
+                    class="project-filter"
+                    data-filter="automation"
+                >
+                    Automation
+                </button>
+
+            </div>
+
+
+            <!-- Grid -->
+
+            <div
+                class="projects-grid"
+                id="projects-grid"
+            >
+                <!-- Projects loaded from JSON -->
+            </div>
 
         </div>
 
