@@ -2,7 +2,7 @@
     {
         "name": "Website CatteCoelho",
         "description": "Author official website.",
-        "image": "assets/images/CATTE.png",
+        "image": "assets/images/catte.png",
         "category": "web",
         "featured": true,
         "tags": [
