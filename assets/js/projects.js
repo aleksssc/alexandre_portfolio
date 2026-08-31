@@ -71,7 +71,23 @@ function renderFeaturedProjects(projects) {
         let button = "";
 
 
-        if (project.demo) {
+        /* DEVELOPMENT */
+
+        if (project.status === "development") {
+
+            button = `
+                <span class="project-button development">
+                    <i class="fa-solid fa-code"></i>
+                    Development
+                </span>
+            `;
+
+        }
+
+
+        /* LIVE WEBSITE */
+
+        else if (project.demo) {
 
             button = `
                 <a
@@ -80,11 +96,17 @@ function renderFeaturedProjects(projects) {
                     rel="noopener noreferrer"
                     class="project-button"
                 >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     Live Website
                 </a>
             `;
 
-        } else if (project.github) {
+        }
+
+
+        /* EXPLORE */
+
+        else if (project.github) {
 
             button = `
                 <a
@@ -93,6 +115,7 @@ function renderFeaturedProjects(projects) {
                     rel="noopener noreferrer"
                     class="project-button"
                 >
+                    <i class="fa-brands fa-github"></i>
                     Explore
                 </a>
             `;
@@ -247,41 +270,77 @@ function renderProjectsGrid(projects) {
             .join("");
 
 
-        const demoButton = project.demo
-            ? `
-                <a
-                    href="${project.demo}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="grid-project-button"
-                >
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    Live
-                </a>
-            `
-            : "";
+        let projectActions = "";
 
 
-        const isGithub = project.github.includes("github.com");
+        /* DEVELOPMENT */
 
-        const projectButton = project.github
-            ? `
-                <a
-                    href="${project.github}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="grid-project-button secondary"
-                >
-                    <i class="${
-                        isGithub
-                            ? "fa-brands fa-github"
-                            : "fa-solid fa-arrow-up-right-from-square"
-                    }"></i>
+        if (project.status === "development") {
 
-                    ${isGithub ? "GitHub" : "Website"}
-                </a>
-            `
-            : "";
+            projectActions = `
+                <span class="grid-project-button development">
+                    <i class="fa-solid fa-code"></i>
+                    Development
+                </span>
+            `;
+
+        }
+
+
+        /* COMPLETED */
+
+        else {
+
+            const demoButton = project.demo
+                ? `
+                    <a
+                        href="${project.demo}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="grid-project-button"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Live
+                    </a>
+                `
+                : "";
+
+
+            let projectButton = "";
+
+
+            if (project.github) {
+
+                const isGithub =
+                    project.github.includes("github.com");
+
+
+                projectButton = `
+                    <a
+                        href="${project.github}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="grid-project-button secondary"
+                    >
+                        <i class="${
+                            isGithub
+                                ? "fa-brands fa-github"
+                                : "fa-solid fa-arrow-up-right-from-square"
+                        }"></i>
+
+                        ${isGithub ? "GitHub" : "Website"}
+                    </a>
+                `;
+
+            }
+
+
+            projectActions = `
+                ${demoButton}
+                ${projectButton}
+            `;
+
+        }
 
 
         card.innerHTML = `
@@ -319,9 +378,7 @@ function renderProjectsGrid(projects) {
 
                 <div class="grid-project-actions">
 
-                    ${demoButton}
-
-                    ${projectButton}
+                    ${projectActions}
 
                 </div>
 

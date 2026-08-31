@@ -1,15 +1,30 @@
 [
     {
+        "name": "Sentinel Grid",
+        "description": "Web platform for server and network management.",
+        "image": "assets/images/sentinelgrid.png",
+        "category": "web",
+        "featured": true,
+        "tags": [
+            "React",
+            "TypeScript",
+            "Database"
+        ],
+        "status": "development",
+        "github": "https://github.com/aleksssc/sentinelgrid"
+    },
+    {
         "name": "Website CatteCoelho",
         "description": "Author official website.",
         "image": "assets/images/catte.png",
         "category": "web",
-        "featured": true,
+        "featured": false,
         "tags": [
             "JS",
             "HTML5",
             "OAUTH"
         ],
+        "status": "completed",
         "github": "https://cattecoelho.com"
     },
     {
@@ -23,6 +38,7 @@
             "HTML5",
             "CSS"
         ],
+        "status": "completed",
         "github": "https://github.com/aleksssc/azie_monitor"
     },
     {
@@ -36,6 +52,7 @@
             "Microsoft 365",
             "Email Automation"
         ],
+        "status": "completed",
         "github": "https://github.com/aleksssc/print_by_mail"
     },
     {
@@ -49,6 +66,7 @@
             "JavaScript",
             "API"
         ],
+        "status": "completed",
         "github": "https://github.com/aleksssc/bankchange"
     },
     {
@@ -62,6 +80,7 @@
             "JavaScript",
             "MySQL"
         ],
+        "status": "completed",
         "github": "https://github.com/aleksssc/fcar"
     }
 ]
