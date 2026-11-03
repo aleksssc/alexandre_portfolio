@@ -1,56 +1,70 @@
 [
     {
-        "name": "Sentinel Grid",
-        "description": "Web platform for server and network management.",
-        "image": "assets/images/sentinelgrid.png",
+        "name": "KenvoryX",
+        "description": "Remote monitoring and management platform for IT infrastructure, devices and services.",
+        "image": "assets/images/projects/kenvoryx.svg",
         "category": "web",
         "featured": true,
         "tags": [
-            "React",
+            "Next.js",
             "TypeScript",
-            "Database"
+            "Supabase"
         ],
         "status": "development",
-        "github": "https://github.com/aleksssc/sentinelgrid"
+        "github": "https://github.com/aleksssc/kenvoryx"
     },
     {
-        "name": "Website CatteCoelho",
-        "description": "Author official website.",
-        "image": "assets/images/catte.png",
+        "name": "Catte Coelho",
+        "description": "Editorial website for an author, featuring books, events and news.",
+        "image": "assets/images/projects/catte-coelho.svg",
         "category": "web",
         "featured": false,
         "tags": [
-            "JS",
             "HTML5",
-            "OAUTH"
+            "CSS",
+            "JavaScript"
         ],
         "status": "completed",
         "github": "https://cattecoelho.com"
     },
     {
+        "name": "Filipa Cardinha",
+        "description": "Official author website showcasing her books, literary universe and latest news.",
+        "image": "assets/images/projects/filipa-cardinha.svg",
+        "category": "web",
+        "featured": true,
+        "tags": [
+            "HTML5",
+            "CSS",
+            "JavaScript"
+        ],
+        "status": "completed",
+        "github": "https://github.com/aleksssc/filipacardinha"
+    },
+    {
         "name": "Azie Monitor",
-        "description": "Desktop platform for server and network monitoring.",
-        "image": "assets/images/aziemonitor.png",
+        "description": "Desktop application for network diagnostics and infrastructure monitoring.",
+        "image": "assets/images/projects/azie-monitor.svg",
         "category": "desktop",
         "featured": true,
         "tags": [
-            "JS",
-            "HTML5",
-            "CSS"
+            "Electron",
+            "JavaScript",
+            "Networking"
         ],
         "status": "completed",
         "github": "https://github.com/aleksssc/azie_monitor"
     },
     {
-        "name": "Automation Script",
-        "description": "Automatic email attachment printing.",
-        "image": "assets/images/python_project.png",
+        "name": "Print by Mail",
+        "description": "Automated email attachment printing with Microsoft Graph and Python.",
+        "image": "assets/images/projects/print-by-mail.svg",
         "category": "automation",
         "featured": true,
         "tags": [
             "Python",
-            "Microsoft 365",
-            "Email Automation"
+            "Microsoft Graph",
+            "Automation"
         ],
         "status": "completed",
         "github": "https://github.com/aleksssc/print_by_mail"
@@ -58,7 +72,7 @@
     {
         "name": "Bank Change",
         "description": "Crypto trading platform between users.",
-        "image": "assets/images/bankchange.png",
+        "image": "assets/images/projects/bank-change.svg",
         "category": "web",
         "featured": false,
         "tags": [
@@ -72,7 +86,7 @@
     {
         "name": "Cardinha Car",
         "description": "Management system for car shops automation.",
-        "image": "assets/images/fcar_project.png",
+        "image": "assets/images/projects/cardinha-car.svg",
         "category": "web",
         "featured": false,
         "tags": [
