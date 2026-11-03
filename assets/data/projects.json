@@ -32,7 +32,7 @@
         "description": "Official author website showcasing her books, literary universe and latest news.",
         "image": "https://raw.githubusercontent.com/aleksssc/filipacardinha/main/assets/books/de_ferias_marcadas.jpg",
         "category": "web",
-        "featured": true,
+        "featured": false,
         "tags": [
             "HTML5",
             "CSS",
