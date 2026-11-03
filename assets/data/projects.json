@@ -2,7 +2,7 @@
     {
         "name": "KenvoryX",
         "description": "Remote monitoring and management platform for IT infrastructure, devices and services.",
-        "image": "assets/images/projects/kenvoryx.svg",
+        "image": "assets/images/sentinelgrid.png",
         "category": "web",
         "featured": true,
         "tags": [
@@ -16,7 +16,7 @@
     {
         "name": "Catte Coelho",
         "description": "Editorial website for an author, featuring books, events and news.",
-        "image": "assets/images/projects/catte-coelho.svg",
+        "image": "assets/images/catte.png",
         "category": "web",
         "featured": false,
         "tags": [
@@ -30,7 +30,7 @@
     {
         "name": "Filipa Cardinha",
         "description": "Official author website showcasing her books, literary universe and latest news.",
-        "image": "assets/images/projects/filipa-cardinha.svg",
+        "image": "https://raw.githubusercontent.com/aleksssc/filipacardinha/main/assets/books/de_ferias_marcadas.jpg",
         "category": "web",
         "featured": true,
         "tags": [
@@ -44,7 +44,7 @@
     {
         "name": "Azie Monitor",
         "description": "Desktop application for network diagnostics and infrastructure monitoring.",
-        "image": "assets/images/projects/azie-monitor.svg",
+        "image": "assets/images/aziemonitor.png",
         "category": "desktop",
         "featured": true,
         "tags": [
@@ -58,7 +58,7 @@
     {
         "name": "Print by Mail",
         "description": "Automated email attachment printing with Microsoft Graph and Python.",
-        "image": "assets/images/projects/print-by-mail.svg",
+        "image": "assets/images/python_project.png",
         "category": "automation",
         "featured": true,
         "tags": [
@@ -72,7 +72,7 @@
     {
         "name": "Bank Change",
         "description": "Crypto trading platform between users.",
-        "image": "assets/images/projects/bank-change.svg",
+        "image": "assets/images/bankchange.png",
         "category": "web",
         "featured": false,
         "tags": [
@@ -86,7 +86,7 @@
     {
         "name": "Cardinha Car",
         "description": "Management system for car shops automation.",
-        "image": "assets/images/projects/cardinha-car.svg",
+        "image": "assets/images/fcar_project.png",
         "category": "web",
         "featured": false,
         "tags": [
